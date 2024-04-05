@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./confluenceinfo.js" defer></script>
+  <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+  <div id="confluence-dropdown-container">
+    <div id="confluence-title">
+      Choose your confluence
+    </div>
+    <select id="confluence-dropdown">
+      <option value=1>EDGE</option>
+      <option value=2>Cloudx Billing</option>
+    </select>
+    <div id="confluence-summary">
+      <div id="confluence-thumbnail-div"><img id="confluence-thumbnail"></div>
+      <div id="confluence-details">
+        <p><strong>Project Code:</strong> <span id="projectCode"></span></p>
+        <p><strong>Link:</strong> <span id="linkElement"></span></p>
+        <p><strong>Summary:</strong> <span id="summaryElement"></span></p>
+      </div>
+    </div>
+
+  </div>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <div class="loading-spinner"></div>
+    <div id="user-input">
+      <input type="text" id="message-input" placeholder="Type a message...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+</body>
+</html>
