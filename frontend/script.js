@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     try {
-      const response = await fetch("https://1.lambda-url.us-east-1.on.aws/", {
+      const response = await fetch("http://127.0.0.1:5000/make_question", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
